@@ -6,8 +6,11 @@
 <a id='demo'>Launch app</a>
 </body>
   <script>
-let url = window.location.href.replace(/^http(s?):\/\//i, "");
-let a = "intent://"+url+"/#Intent;scheme=https;package=com.btbottle.acquabtbottleapp;end";
-window.location.replace(a)
+// let url = window.location.href.replace(/^http(s?):\/\//i, "");
+     let url = window.location.href;
+var a = document.getElementById('demo'); //or grab it by tagname etc
+// a.href = "intent://"+url+"/#Intent;scheme=https;package=com.btbottle.acquabtbottleapp;end";
+    a.href =url;
 </script>
+
 </html>
