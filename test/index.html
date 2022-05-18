@@ -7,9 +7,7 @@
 </body>
   <script>
 let url = window.location.href.replace(/^http(s?):\/\//i, "");
-alert(url)
-var a = document.getElementById('demo'); //or grab it by tagname etc
-a.href = "intent://"+url+"/#Intent;scheme=https;package=com.btbottle.acquabtbottleapp;end";
+let a = "intent://"+url+"/#Intent;scheme=https;package=com.btbottle.acquabtbottleapp;end";
+window.location.replace(a)
 </script>
-
 </html>
