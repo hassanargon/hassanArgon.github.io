@@ -6,10 +6,18 @@
 <a id='demo'>Launch app</a>
 </body>
   <script>
-let url = window.location.href.replace(/^http(s?):\/\//i, "");
+let url = window.location.href;
 var a = document.getElementById('demo'); 
-a.href = "intent://"+url+"/#Intent;scheme=https;package=com.btbottle.acquabtbottleapp;end";
- 
+let updateURL = "intent://"+url+"/#Intent;scheme=https;package=com.btbottle.acquabtbottleapp;end";
+
+var openApp = function() {
+  window.location.replace(updateURL);
+};
+a.href=updateURL;
+window.onload = (event) => {
+  openApp()
+};
+
 </script>
 
 </html>
